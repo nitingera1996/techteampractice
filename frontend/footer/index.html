@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid icon to × and +</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+.button {
+  padding: 10rem;
+  margin-top: 50px;
+}
+
+div {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  color: red;
+  box-shadow: -2.25rem 0, -2.25rem 2.25rem, 2.25rem 0, 2.25rem -2.25rem, 0 -2.25rem, -2.25rem -2.25rem, 0 2.25rem, 2.25rem 2.25rem;
+  transform: none;
+  transition: 1s;
+}
+
+.button:hover .icon.diagonal {
+  box-shadow: -1.875rem 0, -3.75rem 0, 1.875rem 0, 3.75rem 0, 0 -1.875rem, 0 -3.75rem, 0 1.875rem, 0 3.75rem;
+}
+
+.button:hover .x {
+  transform: rotate(45deg);
+  margin-left: 375px;
+  color: red;
+}
+
+.button:hover .collapse {
+  box-shadow: -2rem 0, 0 0 transparent, 2rem 0, 0 0 transparent, 0 -2rem, 0 0 transparent, 0 2rem, 0 0 transparent;
+}
+
+/* ====================== */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  -webkit-backface-visibility: hidden;
+  background-image: radial-gradient(#222222, #000000);
+}
+
+span#static {
+  margin-left: 100px;
+  font-size: 120px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  top: -75px;
+  transition: 1s;
+}
+
+span#hover {
+  margin-left: -78px;
+  font-size: 120px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  top: -85px;
+  left: -27px;
+  display: none;
+  transition: 1s;
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <a class="button">
+  <div class="icon collapse x"></div>
+  <span id="static">Technex</span>
+  <span id="hover">Techne</span>
+</a>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

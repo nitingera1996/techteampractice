@@ -446,10 +446,10 @@ Particle.prototype = (function(o) {
 
     addParticle(control.particleNum);
 
-    canvas.addEventListener('mousemove', mouseMove, false);
+    window.addEventListener('mousemove', mouseMove, false);
     window.addEventListener('mousedown', mouseDown, false);
-    canvas.addEventListener('mouseup', mouseUp, false);
-    canvas.addEventListener('dblclick', doubleClick, false);
+    window.addEventListener('mouseup', mouseUp, false);
+    window.addEventListener('dblclick', doubleClick, false);
 
 
     // GUI
